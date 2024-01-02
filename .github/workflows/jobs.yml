@@ -1,13 +1,21 @@
-name: Double workflow
+name: Time workflow
 
-on: [push]
+on: 
+  schedule:
+    cron: '54 23 * * *'
 
 jobs:
-  job1:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Step 1
-        run: echo "Exécution de Job 1"
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: 
 
   job2:
     needs: job1
