@@ -2,20 +2,16 @@ name: Time workflow
 
 on: 
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '5 0 * * *'
 
 jobs:
-  build:
+  job1:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
+    - name: Step 0
+      run: echo "Exécution de Job 1"
 
-    - name: 
 
   job2:
     needs: job1
