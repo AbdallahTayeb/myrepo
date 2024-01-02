@@ -1,4 +1,4 @@
-name: Simple workflow
+name: Double workflow
 
 on: [push]
 
@@ -10,7 +10,9 @@ jobs:
         run: echo "Exécution de Job 1"
 
   job2:
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
         run: echo "Exécution de Job 2"
+
