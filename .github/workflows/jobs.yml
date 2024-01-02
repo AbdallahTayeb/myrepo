@@ -2,7 +2,7 @@ name: Time workflow
 
 on: 
   schedule:
-    cron: '54 23 * * *'
+    - cron: '58 23 * * *'
 
 jobs:
   build:
