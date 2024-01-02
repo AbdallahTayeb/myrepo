@@ -1,8 +1,7 @@
 name: Time workflow
 
 on: 
-  schedule:
-    - cron: '16 23 * * *'
+  workflow_dispatch:
 
 jobs:
   job1:
