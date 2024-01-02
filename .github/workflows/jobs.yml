@@ -1,3 +1,7 @@
+name: Simple workflow
+
+on: [push]
+
 jobs:
   job1:
     runs-on: ubuntu-latest
