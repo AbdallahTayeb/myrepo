@@ -3,8 +3,7 @@ name: Tag workflow
 on:
   push:
     tags:
-      - 'v*
-
+      - 'v*'
 jobs:
   job1:
     runs-on: ubuntu-latest
