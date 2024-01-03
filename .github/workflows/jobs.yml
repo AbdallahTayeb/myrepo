@@ -1,7 +1,9 @@
-name: Time workflow
+name: Tag workflow
 
-on: 
-  workflow_dispatch:
+on:
+  push:
+    tags:
+      - 'v*
 
 jobs:
   job1:
